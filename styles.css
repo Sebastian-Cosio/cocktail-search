@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+
+.header {
+  background-color: lightgreen;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 6px;
+}
+.header h1 {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  margin: 0 0 8px 0;
+}
+
+/* navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation a {
+  margin: 5px 10px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+.navigation a:hover {
+  background-color: lightgrey;
+  color: red;
+}
+
+
+.new-post-header {
+  text-align: center;
+  margin: 22px 0;
+}
+.new-post-header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+.new-post-header a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+
+.posts {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: lightgreen;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+
+.post {
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: white;
+    padding: 18px;
+    margin-bottom: 0;
+    box-shadow: 0 6px 18px rgba(12, 24, 36, 0.06);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.post h2 {
+  margin: 0 0 8px 0;
+  color: #0d6efd;
+}
+.post p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+.post small {
+  display: block;
+  margin-top: 8px;
+  color: #6b6f76;
+  font-size: 0.9rem;
+}
+
+.actions {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+.actions a,
+.actions button {
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+
+.footer {
+  background-color: darkslategrey;
+  margin-top: 28px;
+  padding: 12px;
+  border-radius: 6px;
+}
+.footer h3, .footer .contact {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  text-align: center;
+}
+
+.post-content {
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.new-post-content {
+    background-color: lightgreen;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+}
