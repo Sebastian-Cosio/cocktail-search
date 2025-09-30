@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results</title>
+</head>
+<!--header information to choose different pages-->
+<body>
+  <div class="header">
+    <h1>Cocktail Results</h1>
+    <div class="navigation">
+      <a href="/">Home</a>
+      <a href="/random">Random</a>
+    </div>
+  </div>
+
+<!--Finds the drink that was searched up if none was found message will appear-->
+  <div class="container posts">
+    <% if (message) { %>
+      <p><%= message %></p>
+    <% } else if (drinks && drinks.length > 0) { %>
+      <% drinks.forEach(drink => { %>
+        <div class="post">
+          <h2><%= drink.strDrink %></h2>
+          <img src="<%= drink.strDrinkThumb %>" width="200">
+          <div class="actions">
+            <a href="/cocktail/<%= drink.idDrink %>">View Details</a>
+          </div>
+        </div>
+      <% }) %>
+    <% } else { %>
+      <p>No results found.</p>
+    <% } %>
+  </div>
+
+<!--Footer for page-->
+  <div class="footer">
+    <h3>Supported by TheCocktailDB API</h3>
+  </div>
+</body>
+</html>
